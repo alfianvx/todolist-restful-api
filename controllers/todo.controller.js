@@ -28,7 +28,7 @@ module.exports = {
   getTodoById: async (req, res) => {
     try {
       const todo = await Todo.findOne({
-        where: { id: req.params.todosId, user_id: req.params.userId },
+        where: { id: req.params.todoId, user_id: req.params.userId },
       });
 
       if (!todo) {

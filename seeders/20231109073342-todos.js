@@ -6,12 +6,15 @@ module.exports = {
     await queryInterface.bulkInsert("Todos", [
       {
         value: "sleep",
+        user_id: 2,
       },
       {
         value: "eat",
+        user_id: 2,
       },
       {
         value: "code",
+        user_id: 2,
       },
     ]);
   },
